@@ -24,5 +24,5 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with:
-        token: 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
-        min-versions-to-keep: 10
+         package-name: 'test-package'
+         min-versions-to-keep: 2
