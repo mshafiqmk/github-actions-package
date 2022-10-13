@@ -24,8 +24,6 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with:
-        owner: 'armennag'
-        repo: 'github-actions-package'
         package-name: 'github-actions-package'
         token: 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
         min-versions-to-keep: 10
