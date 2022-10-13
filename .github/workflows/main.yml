@@ -27,5 +27,5 @@ jobs:
         owner: 'armennag'
         repo: 'github-actions-package'
         package-name: 'github-actions-package'
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.ANA_TEST_ACCESS_TOKEN }}
         min-versions-to-keep: 10
