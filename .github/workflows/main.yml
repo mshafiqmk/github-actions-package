@@ -27,4 +27,4 @@ jobs:
           owner: 'armennag'
           repo: 'github-actions-package'
           package-name: 'test-package'
-          token: ${{ secrets.PAT }}
+          token: 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
