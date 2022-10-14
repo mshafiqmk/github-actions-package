@@ -24,8 +24,7 @@ jobs:
     steps:
     - uses: WPMedia/delete-github-package-versions@v0.4.10
       with:
-        keep: 5
         names: |
+         '1.0.0'
           'test-package'
-          '1.0.0'
           '@armennag/test-package'
