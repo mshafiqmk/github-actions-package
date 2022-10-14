@@ -1,6 +1,6 @@
 {
-  "name": "@armennag/test-package",
-  "version": "2.1.3",
+  "name": "@armennag/tta",
+  "version": "alpha",
   "description": "",
   "main": "index.js",
   "publishConfig": {
