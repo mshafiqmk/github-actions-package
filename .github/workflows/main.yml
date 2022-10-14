@@ -34,4 +34,7 @@ jobs:
         repo: 'github-actions-package'
         package-name: '@armennag/tta@1.0.0-alpha'
         token: ${{ secrets.reposecret }}
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-version-ids: 45633652
 
