@@ -22,24 +22,24 @@ jobs:
     runs-on: ubuntu-latest
     needs: publish-gpr
     steps:
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: 'test-package'
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: test-package
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: '/test-package'
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: 'armennag/test-package'
     
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: '@armennag/test-package'
       
-    - uses: actions/delete-package-versions@v3
+    - uses: actions/delete-package-versions@v2
       with:
           package-name: armennag/test-package
     
