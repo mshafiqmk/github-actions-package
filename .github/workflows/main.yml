@@ -25,3 +25,22 @@ jobs:
     - uses: actions/delete-package-versions@v3
       with:
           package-name: 'test-package'
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-name: test-package
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-name: '/test-package'
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-name: 'armennag/test-package'
+    
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-name: '@armennag/test-package'
+      
+    - uses: actions/delete-package-versions@v3
+      with:
+          package-name: armennag/test-package
+    
+
