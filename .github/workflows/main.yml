@@ -25,4 +25,5 @@ jobs:
     - uses: WPMedia/delete-github-package-versions@v0.4.10
       with:
         names: |
-          test-package/2.0.6
+          test-package
+          test-package@v2.0.5
