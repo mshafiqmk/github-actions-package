@@ -55,5 +55,10 @@ jobs:
         names: |
               @armennag/test-package@1.0.5
               test-package
+    - name: Remove package versions
+      id: remove-package-versions
+      uses: epitomeglobal/remove-package-versions@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
 
