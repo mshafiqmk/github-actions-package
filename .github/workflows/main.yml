@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with:
-        owner: 'armennag'
+        owner: '@armennag'
         repo: 'github-actions-package'
         package-name: 'github-actions-package'
         token: ${{ secrets.reposecret }}
