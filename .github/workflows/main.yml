@@ -24,5 +24,5 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v3
         with:
-          package-name: test-package
+          package-name: ui-components-master
           token: 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
