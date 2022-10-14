@@ -25,6 +25,6 @@ jobs:
       - uses: actions/delete-package-versions@v3
         with:
           owner: '@armennag'
-          repo: 'github-actions-package'
-          package-name: 'test-package'
+          repo: github-actions-package
+          package-name: test-package
           token: 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
