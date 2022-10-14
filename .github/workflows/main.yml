@@ -18,16 +18,13 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  job2:
+  deletePackage:
     runs-on: ubuntu-latest
     needs: publish-gpr
     steps:
-
-    - uses: windyakin/delete-package-versions-keep-latest@v1
-      with:
-        owner: armennag
-        repo: github-actions-package
-        package-name: test-package
-        keep-latest-package-versions: 10
-    
-
+      - uses: actions/delete-package-versions@v3
+        with:
+          owner: 'armennag'
+          repo: 'github-actions-package'
+          package-name: 'test-package'
+          token: ${{ secrets.PAT }}
