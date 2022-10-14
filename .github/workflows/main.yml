@@ -26,12 +26,12 @@ jobs:
       with:
         owner: 'armennag'
         repo: 'github-actions-package'
-        package-name: 'github-actions-package@1.0.0'
+        package-name: '1.0.0-alpha'
         token: ${{ secrets.reposecret }}
     - uses: actions/delete-package-versions@v3
       with:
         owner: 'armennag'
         repo: 'github-actions-package'
-        package-name: 'github-actions-package/1.0.0'
+        package-name: '@armennag/tta@1.0.0-alpha'
         token: ${{ secrets.reposecret }}
 
