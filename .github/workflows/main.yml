@@ -50,5 +50,10 @@ jobs:
       with:
           package-name: "@armennag/test-package"
           toke : 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 
+    - uses: smartsquaregmbh/delete-old-packages@v0.5.0
+      with:
+        names: |
+              @armennag/test-package@1.0.5
+              test-package
     
 
