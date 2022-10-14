@@ -27,4 +27,5 @@ jobs:
         keep: 5
         names: |
           'test-package'
-          
+          '1.0.0'
+          '@armennag/test-package'
