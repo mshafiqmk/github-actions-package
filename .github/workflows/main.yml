@@ -25,22 +25,26 @@ jobs:
     - uses: actions/delete-package-versions@v2
       with:
           package-name: 'test-package'
+          toke : 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
     - uses: actions/delete-package-versions@v2
       with:
           package-name: test-package
+          toke : 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
     - uses: actions/delete-package-versions@v2
       with:
           package-name: '/test-package'
+          toke : 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
     - uses: actions/delete-package-versions@v2
       with:
           package-name: 'armennag/test-package'
-    
+          toke : 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
     - uses: actions/delete-package-versions@v2
       with:
           package-name: '@armennag/test-package'
-      
+          toke : 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
     - uses: actions/delete-package-versions@v2
       with:
           package-name: armennag/test-package
+          toke : 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 
     
 
