@@ -27,4 +27,4 @@ jobs:
         names: |
          '1.0.0'
           'test-package'
-          '@armennag/test-package'
+          '@armennag/test-package@1.0.0'
