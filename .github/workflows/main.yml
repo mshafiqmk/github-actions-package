@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: windyakin/delete-package-versions-keep-latest@v1
       with:
-        package-name: package
-        keep-latest-package-versions: 10
+        package-name: test-package
+        keep-latest-package-versions: 3
     
 
