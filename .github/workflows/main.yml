@@ -19,14 +19,17 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
   deletePackage:
     runs-on: ubuntu-latest
     needs: publish-gpr
     steps:
-    - uses: actions/delete-package-versions@v3
-      with:
-        owner: 'mshafiqmk'
-        repo: 'github-actions-package'
-        package-name: 'tta@6.0.0-alpha'
-        token: ${{ secrets.GITHUB_TOKEN }}
-    - run: npm unpublish tta@6.0.0-alpha
+      - uses: actions/delete-package-versions@v3
+        with:
+          owner: 'mshafiqmk'
+          repo: 'github-actions-package'
+          package-name: 'tta@6.0.0-alpha'
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm unpublish tta@6.0.0-alpha
+        env:
+            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
