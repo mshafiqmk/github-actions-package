@@ -1,6 +1,6 @@
 {
   "name": "@armennag/tta",
-  "version": "v5.0.0-alpha",
+  "version": "v6.0.0-alpha",
   "description": "",
   "main": "index.js",
   "publishConfig": {
