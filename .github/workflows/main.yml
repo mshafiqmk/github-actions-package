@@ -25,14 +25,14 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with:
-        owner: 'mshafiqmk'
+        owner: 'armennag'
         repo: 'github-actions-package'
         package-name: '6.0.0-alpha'
-        token: ${{ secrets.reposecret }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/delete-package-versions@v3
       with:
-        owner: 'mshafiqmk'
+        owner: 'armennag'
         repo: 'github-actions-package'
-        package-name: '@mshafiqmk/tta@6.0.0-alpha'
-        token: ${{ secrets.reposecret }}
+        package-name: '@armennag/tta@6.0.0-alpha'
+        token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm unpublish tta@6.0.0-alpha
