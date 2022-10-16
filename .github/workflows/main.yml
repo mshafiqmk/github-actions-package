@@ -29,18 +29,10 @@ jobs:
         repo: 'github-actions-package'
         package-name: '1.0.0-alpha'
         token: ${{ secrets.reposecret }}
-        num-old-versions-to-delete: 3
-        min-versions-to-keep: 20
-        delete-only-pre-release-versions: "true"
-        ignore-versions: '^(0|[1-9]\\d*)\\.0\\.0$'
     - uses: actions/delete-package-versions@v3
       with:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
         package-name: '@mshafiqmk/tta@1.0.0-alpha'
         token: ${{ secrets.reposecret }}
-        num-old-versions-to-delete: 3
-        min-versions-to-keep: 20
-        delete-only-pre-release-versions: "true"
-        ignore-versions: '^(0|[1-9]\\d*)\\.0\\.0$'
     - run: npm unpublish tta@1.0.0-alpha
