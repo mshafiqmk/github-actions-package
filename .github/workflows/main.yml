@@ -40,4 +40,4 @@ jobs:
           repo: 'github-actions-package'
           package-name: 'tta'
           num-old-versions-to-delete: 3
-          token: ${{ secrets.GITHUB_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
