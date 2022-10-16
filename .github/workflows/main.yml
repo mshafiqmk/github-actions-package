@@ -27,6 +27,6 @@ jobs:
       with:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
-        package-name: '@mshafiqmk/tta@6.0.0-alpha'
+        package-name: 'tta@6.0.0-alpha'
         token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm unpublish tta@6.0.0-alpha
