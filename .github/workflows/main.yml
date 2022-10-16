@@ -27,12 +27,12 @@ jobs:
       with:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
-        package-name: '1.0.0-alpha'
+        package-name: '6.0.0-alpha'
         token: ${{ secrets.reposecret }}
     - uses: actions/delete-package-versions@v3
       with:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
-        package-name: '@mshafiqmk/tta@1.0.0-alpha'
+        package-name: '@mshafiqmk/tta@6.0.0-alpha'
         token: ${{ secrets.reposecret }}
-    - run: npm unpublish tta@1.0.0-alpha
+    - run: npm unpublish tta@6.0.0-alpha
