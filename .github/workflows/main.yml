@@ -37,7 +37,7 @@ jobs:
       with:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
-        package-name: '@armennag/tta@1.0.0-alpha'
+        package-name: '@mshafiqmk/tta@1.0.0-alpha'
         token: ${{ secrets.reposecret }}
         num-old-versions-to-delete: 3
         min-versions-to-keep: 20
