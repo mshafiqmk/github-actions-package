@@ -24,30 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: publish-gpr
     steps:
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
-          username: mshafiqmk
-          registry: https://npm.pkg.github.com/@mshafiqmk
-          repo: github-actions-package
-          packages: |
-            tta
-          max_semver_pattern:  6.0.0-alpha
-          dry_run: true
-      # - uses: actions/delete-package-versions@v3
-      #   with:
-      #     owner: 'mshafiqmk'
-      #     repo: 'github-actions-package'
-      #     package-name: 'tta@6.0.0-alpha'
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      # - run: npm unpublish tta@6.0.0-alpha
-      #   env:
-      #       NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - uses: actions/delete-package-versions@v3
-        with:
-          owner: 'mshafiqmk'
-          repo: 'github-actions-package'
-          package-name: 'tta'
-          num-old-versions-to-delete: 3
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/delete-package-versions@v3
+      with:
+        owner: 'mshafiqmk'
+        repo: 'github-actions-package'
+        package-name: 'tta'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        min-versions-to-keep: 6
