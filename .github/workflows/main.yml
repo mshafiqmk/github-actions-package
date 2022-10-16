@@ -28,11 +28,12 @@ jobs:
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
           username: mshafiqmk
+          registry: https://npm.pkg.github.com/@mshafiqmk
           repo: github-actions-package
           packages: |
             tta
           max_semver_pattern:  6.0.0-alpha
-          dry_run: false
+          dry_run: true
       # - uses: actions/delete-package-versions@v3
       #   with:
       #     owner: 'mshafiqmk'
