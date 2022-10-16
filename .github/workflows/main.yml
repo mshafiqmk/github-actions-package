@@ -33,3 +33,7 @@ jobs:
       - run: npm unpublish tta@6.0.0-alpha
         env:
             NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - uses: actions/delete-package-versions@v3
+        with:
+          package-version-ids: '45938620'
+          token: ${{ secrets.PAT }}
