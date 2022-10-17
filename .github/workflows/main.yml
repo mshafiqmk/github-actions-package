@@ -35,6 +35,6 @@ jobs:
     #     token: ${{ secrets.GITHUB_TOKEN }}
     #     min-versions-to-keep: 6
     - uses: actions/delete-package-versions@v3
-    with:
-      package-name: 'tta'
-      num-old-versions-to-delete: 3
+      with:
+        package-name: 'tta'
+        num-old-versions-to-delete: 3
