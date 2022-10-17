@@ -35,5 +35,5 @@ jobs:
         owner: 'mshafiqmk'
         repo: 'github-actions-package'
         package-name: 'tta'
-        token: ${{ secrets.GITHUB_PAT }}
+        token: ${{ secrets.PAT }}
         min-versions-to-keep: 6
