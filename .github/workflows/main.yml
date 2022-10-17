@@ -27,10 +27,14 @@ jobs:
     runs-on: ubuntu-latest
     # needs: publish-gpr
     steps:
+    # - uses: actions/delete-package-versions@v3
+    #   with:
+    #     owner: 'mshafiqmk'
+    #     repo: 'github-actions-package'
+    #     package-name: 'tta'
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     min-versions-to-keep: 6
     - uses: actions/delete-package-versions@v3
-      with:
-        owner: 'mshafiqmk'
-        repo: 'github-actions-package'
-        package-name: 'tta'
-        token: ${{ secrets.GITHUB_TOKEN }}
-        min-versions-to-keep: 6
+    with:
+      package-name: 'tta'
+      num-old-versions-to-delete: 3
